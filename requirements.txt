@@ -1,0 +1,30 @@
+# Core dependencies
+torch>=1.10.0
+torchvision>=0.11.0
+numpy>=1.19.0
+Pillow>=8.0.0
+opencv-python>=4.5.0
+scipy>=1.7.0
+scikit-image>=0.16.0
+
+# Configuration and utilities
+yacs>=0.1.8
+tqdm>=4.60.0
+albumentations>=1.2.0
+
+# Deep learning frameworks and models
+timm>=0.5.4
+mmcv-full>=1.5.0
+
+# Data handling
+pandas>=1.3.0
+PyYAML>=6.0
+
+# Optional visualization (install manually if needed)
+# matplotlib>=3.3.0
+# seaborn>=0.11.0
+
+# Development tools (optional)
+# pytest>=6.0
+# black>=22.0
+# flake8>=4.0

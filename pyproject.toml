@@ -1,0 +1,103 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trufor"
+version = "1.0.0"
+description = "Image Forgery Detection and Localization Library"
+readme = "README.md"
+license = {text = "Custom Non-Commercial License"}
+authors = [
+    {name = "TruFor Team", email = "trufor@unina.it"},
+]
+maintainers = [
+    {name = "TruFor Team", email = "trufor@unina.it"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: Free for non-commercial use",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8", 
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Multimedia :: Graphics",
+]
+keywords = [
+    "image forensics",
+    "deepfake detection", 
+    "image manipulation",
+    "computer vision",
+    "deep learning",
+    "pytorch",
+]
+dependencies = [
+    "torch>=1.10.0",
+    "torchvision>=0.11.0",
+    "numpy>=1.19.0",
+    "Pillow>=8.0.0",
+    "opencv-python>=4.5.0",
+    "scipy>=1.7.0",
+    "scikit-image>=0.16.0",
+    "yacs>=0.1.8",
+    "tqdm>=4.60.0",
+    "albumentations>=1.2.0",
+    "timm>=0.5.4",
+    "mmcv-full>=1.5.0",
+    "pandas>=1.3.0",
+    "PyYAML>=6.0",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "flake8>=4.0",
+    "isort>=5.0",
+]
+viz = [
+    "matplotlib>=3.3.0",
+    "seaborn>=0.11.0",
+]
+notebook = [
+    "jupyter>=1.0.0",
+    "ipywidgets>=7.0.0",
+]
+
+[project.scripts]
+trufor-predict = "trufor.cli:predict_command"
+trufor-info = "trufor.cli:info_command"
+
+[project.urls]
+Homepage = "https://github.com/grip-unina/TruFor"
+Documentation = "https://grip-unina.github.io/TruFor/"
+Repository = "https://github.com/grip-unina/TruFor"
+"Bug Reports" = "https://github.com/grip-unina/TruFor/issues"
+Paper = "https://arxiv.org/abs/2212.10957"
+
+[tool.setuptools]
+packages = ["trufor"]
+
+[tool.setuptools.package-data]
+trufor = ["config/*.yaml", "models/cmx/*.txt"]
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"

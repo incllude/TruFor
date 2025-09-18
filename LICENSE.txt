@@ -1,0 +1,21 @@
+TruFor Library License
+
+Copyright (c) 2023 Image Processing Research Group of University Federico II of Naples ('GRIP-UNINA').
+
+All rights reserved.
+
+This work should only be used for nonprofit purposes.
+
+By downloading and/or using any of these files, you implicitly agree to all the
+terms of the license, as specified in this document and online at
+http://www.grip.unina.it/download/LICENSE_OPEN.txt
+
+NON-COMMERCIAL USE ONLY LICENSE
+
+This software is provided for research and educational purposes only. 
+Commercial use is strictly prohibited without explicit written permission 
+from the copyright holders.
+
+DISCLAIMER:
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. 
+THE AUTHORS SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF THIS SOFTWARE.
