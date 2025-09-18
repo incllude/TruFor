@@ -12,7 +12,7 @@ __email__ = "trufor@unina.it"
 from .models import TruForModel
 from .datasets import TruForDataset
 from .config import TruForConfig
-from .utils import load_model, predict_image
+from .utils import load_model, predict_image, batch_predict, save_results, get_model_summary
 
 __all__ = [
     "TruForModel",
@@ -20,4 +20,7 @@ __all__ = [
     "TruForConfig",
     "load_model",
     "predict_image",
+    "batch_predict",
+    "save_results", 
+    "get_model_summary",
 ]
